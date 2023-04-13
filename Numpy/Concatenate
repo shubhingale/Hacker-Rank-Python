@@ -57,3 +57,14 @@ Sample Output
  [3 4]
  [3 4]
  [3 4]] 
+
+
+Solution:
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import numpy
+P, N, M = map(int,input().split())
+A = numpy.array([input().split() for _ in range(P)],int)
+B = numpy.array([input().split() for _ in range(N)],int)
+print(numpy.concatenate((A, B), axis = 0))
